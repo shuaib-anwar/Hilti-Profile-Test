@@ -36,7 +36,7 @@ export class ProfilePage {
     let actionSheet = this.actionSheetCtrl.create({
       title: 'Select photo source',
       buttons: [{
-        text: 'Use Camera',
+        text: 'Take Photo',
         icon: 'camera',
         role: 'destructive',
         handler: () => {
@@ -46,7 +46,7 @@ export class ProfilePage {
         }
       },
       {
-        text: 'Photo Library',
+        text: 'Choose Photo',
         icon: 'image',
         handler: () => {
           let options: CameraOptions = assign(cameraOptions, { sourceType: 0 })
@@ -55,10 +55,11 @@ export class ProfilePage {
         }
       },
       {
-        text: 'Remove Pic',
+        text: 'Cancel',
         icon: 'trash',
+        role: 'cancel',
         handler: () => {
-          this.removePicture();
+          
         }
       }]
     });

@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
+  "name": "hilti-profile-test",
   "version": "0.0.0",
-  "author": "Ionic Framework",
+  "author": "Shuaib Anwar",
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {

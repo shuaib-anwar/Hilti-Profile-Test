@@ -1,0 +1,81 @@
+// http://ionicframework.com/docs/v2/theming/
+
+$Hilti-red: #d0021b;
+$white: #ffffff;
+$header-grey: #fafafa;
+$warm-grey: #999999;
+$dark-grey: #534f53;
+
+$secondary: #f3f0eb;
+
+@font-face {
+  font-family: HiltiSmall;
+  src: url(../assets/fonts/hilti-bold.ttf);
+}
+
+@font-face {
+  font-family: HiltiSmall-Roman;
+  src: url(../assets/fonts/hilti-roman.ttf);
+}
+
+.HiltiSmall {
+  font-family: HiltiSmall;
+}
+
+.HiltiSmall-Roman {
+  font-family: HiltiSmall-Roman;
+}
+
+.Header-Name {
+  font-family: HiltiSmall;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.Header-Detail {
+  font-family: HiltiSmall-Roman;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+}
+
+.Picture-Description {
+  font-family: HiltiSmall-Roman;
+  font-size: 14px;
+  text-align: center;
+  color: $white;
+}
+
+.Picture-Edit {
+  font-family: HiltiSmall-Roman;
+  font-size: 12px;
+  text-align: center;
+  color: $white;
+}
+
+.header {
+  &::after {
+    background-position: 0 -3px;
+  }
+}
+
+.toolbar {
+  .toolbar-background {
+    background-color: $header-grey;
+  }
+
+  .arrow-back {
+    .bar-button {
+      color: $Hilti-red;
+    }
+  }
+}
+
+.action-sheet-md,
+.action-sheet-ios {
+  .action-sheet-button {
+    color: $Hilti-red;
+  }
+}

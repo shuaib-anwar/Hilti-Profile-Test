@@ -18,10 +18,9 @@ export class ProfilePage {
   	public actionSheetCtrl: ActionSheetController,
     private camera: Camera,
     public toastCtrl: ToastController,
-    public modalCtrl: ModalController,
-    //private nativeStorage: NativeStorage
+    public modalCtrl: ModalController
     ) {
-    
+
   }
 
   presentActionSheet() {
@@ -71,17 +70,12 @@ export class ProfilePage {
     this.camera.getPicture(options).then((imageData) => {
       let base64Image = 'data:image/jpeg;base64,' + imageData;
 
-      /*this.nativeStorage.setItem('picture', {picture: base64Image}).then(() => {
-        let toast = this.toastCtrl.create({
-          message: 'Profile Image Updated.',
-          duration: 3000
-        });
+      let toast = this.toastCtrl.create({
+        message: 'Profile Image Updated.',
+        duration: 3000
+      });
 
-        toast.present();
-      },
-        (error) => {
-          console.error('Error storing item', error)
-      });*/
+      toast.present();
 
       this.profileImage = base64Image;
     }, (err) => {
@@ -90,8 +84,6 @@ export class ProfilePage {
   }
 
   removePicture(){
-    //this.nativeStorage.remove('picture');
-
     this.profileImage = null;
   }
 }

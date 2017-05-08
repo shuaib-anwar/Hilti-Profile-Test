@@ -27,7 +27,7 @@ export class ProfilePage {
     this.error = null;
 
     var cameraOptions = {
-      quality: 100,
+      quality: 30,
       destinationType: this.camera.DestinationType.DATA_URL,
       encodingType: this.camera.EncodingType.JPEG,
       mediaType: this.camera.MediaType.PICTURE

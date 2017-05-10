@@ -4,6 +4,21 @@ page-profile {
     align-items: flex-start;
   }
 
+  .bar-buttons {
+    margin: 10px 6px;
+
+    button {
+      width: 42px;
+      height: 42px;
+      text-align: center;
+      border-radius: 50px;
+
+      &.activated {
+        background-color: #dddddd;
+      }
+    }
+  }
+
   .item-input {
     .label {
       color: $Hilti-red;
@@ -65,7 +80,7 @@ page-profile {
 
         bottom: 0;
         padding: 2px 0;
-        background: url('../assets/img/opacity-bg.png') no-repeat center bottom;
+        background: url("../assets/img/opacity-bg.png") no-repeat center bottom;
       }
     }
   }

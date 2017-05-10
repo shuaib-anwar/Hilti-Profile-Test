@@ -20,7 +20,14 @@ export class ProfilePage {
     public toastCtrl: ToastController,
     public modalCtrl: ModalController
     ) {
+  }
 
+  goBack() {
+    // Go Back Handler
+  }
+
+  moreInfo() {
+    // More Info Handler
   }
 
   presentActionSheet() {
